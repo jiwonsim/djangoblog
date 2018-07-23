@@ -8,7 +8,7 @@ class Post(models.Model): # Post라는 장고 모델 정의
     text = models.TextField()
     created_date = models.DateTimeField(
         default = timezone.now)
-    publish_date = models.DateTimeField(
+    published_date = models.DateTimeField(
         blank = True, null = True)
         
     #publish 메서드 
